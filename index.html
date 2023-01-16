@@ -9,6 +9,9 @@
     <title>Contact page</title>
 </head>
 <body>
+    <button onclick="myfun()">
+        Theme
+    </button>
    <h1>Contact-Us</h1> 
    <p>-------------------------</p>
    <br>
@@ -40,6 +43,11 @@
     <p>By Shevy</p>
 </details>
  </div>
-  
+ <script>
+  function myfun(){
+   var element= document.body;
+      element.classList.toggle('black');
+  }
+ </script>
 </body>
 </html>
