@@ -4,50 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./style.css">
-   <link rel="icon"type="type/x-icon"href="message.png">
-    <title>Contact page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Contact-form</title>
 </head>
 <body>
-    <button onclick="myfun()">
-        Theme
-    </button>
-   <h1>Contact-Us</h1> 
-   <p>-------------------------</p>
-   <br>
-   <br>
-   <div class="B">
-    <form action="https://formsubmit.co/shevyofficial2003@gmail.com" method="POST"> 
+    <div class="container">
+     <div class="bubbles">
+        <span style="--i:10"></span>
+        <span style="--i:20"></span>
+        <span style="--i:30"></span>
+        <span style="--i:45"></span>
+        <span style="--i:30"></span>
+        <span style="--i:10"></span>
+        <span style="--i:28"></span>
+        <span style="--i:25"></span>
+        <span style="--i:35"></span>
+        <span style="--i:55"></span>
+        <span style="--i:40"></span>
+        <span style="--i:13"></span>
+        <span style="--i:29"></span>
+        <span style="--i:42"></span>
+        <span style="--i:24"></span>
+        <span style="--i:31"></span>
+        <span style="--i:17"></span>
+        <span style="--i:10"></span>
+        <span style="--i:45"></span>
+        <span style="--i:37"></span>
+        <span style="--i:67"></span>
+        <span style="--i:37"></span>
+        <span style="--i:59"></span>
+        <span style="--i:11"></span>
+        <span style="--i:28"></span>
+        <span style="--i:10"></span>
+     </div>
+    </div>
+    
+    <button style="position: absolute;top:30px;left:492px;" onclick="theme()">Theme</button> 
+<div class="formtext">
+   <form action="#">
     <br>
     <br>
-    <label for="name">Name :</label>
-    <input type="text" placeholder="Enter your name"id="name"name="name" pattern ="[a-z A-Z]{2,13}"required>
+    <br>
+    <label for="name">Name:</label>
+    <input type="text" placeholder="Enter your name" id="name"title="Enter your name" pattern="[a-zA-z]{3,}"required>
+    <br>
     <br>
     <br>
     <label for="email">Email:</label>
-    <input type="email" placeholder="Enter your email" id="email"name="email" pattern = "[a-z A-Z 0-9]{8,12}[@][g][m][a][i][l][.][c][o][m]"required>
-  <br>
-  <br>
-    <label for="Query">Feedback/Query :</label>
+    <input type="text" placeholder="Enter your email" id="email"title="Enter your Email" pattern="[a-zA-Z]{2,}[0-9]*[@][a-z]+[.][c][o][m]"required>
     <br>
     <br>
-    <textarea type="text" placeholder="Feedback/Query"row="3"value="feedback" id="Query"name="feedback"required></textarea>
+    <br>
+    <label for="email">Feedback:</label>
     <br>
     <br>
-    <button type="submit">Submit</button>
-   </form>
-   </div>
- <div class="footer">
-<details>
-    <summary> Built With 🖤 </summary>
-    <p>By Shevy</p>
-</details>
- </div>
- <script>
-  function myfun(){
-   var element= document.body;
-      element.classList.toggle('black');
-  }
- </script>
+    <textarea placeholder="Type your query/feedback" title="Enter your feedback"required></textarea>
+   <br>
+   <br>
+   <br>
+    <button>Submit</button>
+</form>
+</div>
+<div class="footer">
+    <details>
+        <summary>
+            Made with 🤍
+        </summary>
+        <p>By Shevy</p>
+    </details>
+</div>
+    <script>
+        function theme()
+        {
+            var element=document.body;
+            element.classList.toggle('black');
+        }
+    </script>
 </body>
 </html>
